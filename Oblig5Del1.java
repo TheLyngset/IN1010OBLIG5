@@ -6,12 +6,12 @@ import java.util.Scanner;
 public class Oblig5Del1 {
     public static void main(String[] args) {
         SubsekvensRegister subsekvensRegister = new SubsekvensRegister();
-        File metadata = new File("Data/metadata.csv");
+        File metadata = new File("testdatalitenlike/metadata.csv");
         try (Scanner scanner = new Scanner(metadata)) {
             while(scanner.hasNext()){
                 String[] linje = scanner.nextLine().split(",");
                 if(linje[0].startsWith("fil")){
-                    subsekvensRegister.leggTil(SubsekvensRegister.lesSubsekvenserFraFil(new File("Data/" + linje[0])));
+                    subsekvensRegister.leggTil(SubsekvensRegister.lesSubsekvenserFraFil(new File("testdatalitenlike/" + linje[0])));
                 }
             }
         } catch (FileNotFoundException e) {
