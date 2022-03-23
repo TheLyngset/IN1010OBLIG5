@@ -1,0 +1,8 @@
+ABCDBCD
+EFGH
+
+Denne filen git disse subsekvensene av lengde 3:
+ABCDBCD gir ABC BCD CBD DBC BCD
+EFGH gir EFG FGH 
+og vi faar en HashMap med 6 elementer:
+(ABC,1) (BCD,1) (CBD,1) (DBC,1) (EFG,1) (FGH,1)

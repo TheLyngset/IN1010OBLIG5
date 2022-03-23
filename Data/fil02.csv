@@ -1,0 +1,9 @@
+ABCDABCDBCD
+DEF
+BABCABC
+
+Denne filen gir disse subsekvensene av lengde 3:
+ABCDABCDBCD gir ABC BCD CDA DAB ABC BCD CDB DBC BCD
+DEF gir DEF BABCABC gir BAB ABC BCA CAB ABC
+Og vi faar en HashMap med 10 elementer: 
+(ABC,1) (BCD, 1) (CDA,1) (DAB,1) (BCA,1) (CAB,1) (CDB,1) (DBC, 1) (DEF,1) (BAB,1)
