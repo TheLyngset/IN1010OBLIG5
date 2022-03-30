@@ -31,14 +31,11 @@ public class SubsekvensRegister {
         HashMap<String,Subsekvens> hashMap = new HashMap<>();
         try {
             scanner = new Scanner(fil);
-            System.out.println("Scanner opprettet");
             while(scanner.hasNextLine()){
-                System.out.println("Kjoerer while loop");
                 ArrayList<String> linje = new ArrayList<>(Arrays.asList(scanner.nextLine().split("(?!^)")));
                 if(linje.size() <= 1)break;
                 String subsekvens = "";
                 for(int i = 0; i < linje.size(); i++){
-                    System.out.println("kjoerer for loop");
                     try {
                         linje.get(i+2);
                     } catch (Exception e) {
